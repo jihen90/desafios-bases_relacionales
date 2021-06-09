@@ -10,13 +10,13 @@ CREATE TABLE peliculas(
     id CHAR(4)UNIQUE,
     Pelicula VARCHAR(100),
     Anio_estreno CHAR (6),
-    Director VARCHAR (25),
+    Director VARCHAR (30),
     PRIMARY KEY (id)
 );
 
 CREATE TABLE reparto(
     id CHAR(4),
-    Actor VARCHAR (100),
+    Actor VARCHAR (30),
     FOREIGN KEY (id) REFERENCES
     peliculas(id)
 );
